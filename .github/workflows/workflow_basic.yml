@@ -3,11 +3,10 @@ name: Workflows basics
 on: push
 
 jobs:
-runs-on: ubuntu-latest
   test:
+    runs-on: ubuntu-latest
     steps:
       - name: 22f3002341@ds.study.iitm.ac.in
         run: echo "Hello, world!"
         env: 
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
